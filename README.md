@@ -1,2 +1,2 @@
-# eis-heauton
-Minimalist Roam Research theme
+# Eis Heauton
+Just enough styling to make Roam pop. 
