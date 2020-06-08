@@ -1,2 +1,2 @@
 # eis-heauton
-Simple Roam Research theme
+Minimalist Roam Research theme
