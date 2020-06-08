@@ -1,0 +1,383 @@
+/* Fix images inside Kanban by @su */
+.kanban-card > span div { width: auto !important; margin-right: 0 !important; }
+
+/* How to use: Simply put #make:yt-large infront of {{youtube: }} */
+[data-tag*="make:yt-large"] ~ div iframe
+{
+    width: 700px;
+    height: 400px;
+    
+}
+
+[data-tag="make:wide"] ~ div {
+	width: 110% !important;
+}
+
+[data-tag="make:wide-x"] ~ div {
+	width: 120% !important;	
+}
+
+[data-tag="make:wide-xx"] ~ div {
+	width: 130% !important;	
+}
+
+[data-tag="make:wide-xxl"] ~ div {
+	width: 150% !important;
+}
+
+
+[data-tag="make:wide-on-hover"] ~ div:hover {
+  transform: scale(1.5); 
+}
+
+[data-tag*="make:wide"] ~ div div:nth-child(2){
+	width: 100% !important;
+}
+
+
+
+[data-tag="make:long"] ~ div {
+	height: 660px !important;
+}
+
+[data-tag="make:long-x"] ~ div {
+	height: 760px !important;
+}
+
+[data-tag="make:long-xx"] ~ div {
+	height: 860px !important;
+}
+
+[data-tag="make:long-xxl"] ~ div {
+	height: 960px !important;
+}
+
+
+[data-tag*="make:long"] ~ div div:nth-child(2){
+	height: 100% !important;
+}
+
+/* Split Screen CSS for Roam                 */
+/* "Assembled" and tweaked by @DavidCrandall */
+/* https://davidcrandallwrites.com           */
+
+
+/* change main font */
+
+body,
+html,
+div,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* change font for all headings */
+
+h1,
+h1 div,
+h1 textarea,
+.rm-level1 div,
+#right-sidebar .rm-level2, /* page headings in right sidebar */
+.rm-reference-main .rm-level3 , /* page headings in referenced items */
+.rm-level1 textarea,
+.roam-log-preview h1,
+h1.rm-title-display,
+h1.rm-title-display textarea, 
+.level1,
+.level2 {
+  --font-family: "Fira Code", Menlo, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500 !important;
+  --letter-spacing: -0.08em;
+}
+
+h2,
+h2 div,
+h2 textarea,
+h3,
+h3 div,
+h3 textarea {
+  --font-family: "Fira Code", Menlo, monospace;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #333 !important;
+}
+
+a {
+    color: #106ba3; 
+    /* #4f718f; */
+}
+
+/* less space below page heading */
+
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+  margin-bottom: 10px;
+}
+
+
+h1.level2 {
+    font-size: 36px !important;
+}
+
+/* Main block - remove centering */
+
+.roam-center {
+  --align-item: left;
+  flex-basis: 40% !important;
+}
+
+
+
+/* lighter bullets */
+
+#right-sidebar .controls .roam-bullet-closed,
+.controls .roam-bullet-closed {
+  background: none;
+  border: 1px solid silver;
+}
+
+.simple-bullet-inner {
+  opacity: 0.3;
+}
+
+/* lighter vertical guides */
+
+.block-border-left {
+  border-color: #eee;
+}
+
+
+.roam-block-container h1 {
+  font-weight: 300;
+  font-size: 26px;
+  color: black;
+}
+
+.roam-block-container h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+}
+
+/* align checkboxes better */
+
+label.check-container {
+  margin-bottom: 11px;
+  margin-right: 3px;
+}
+
+/* align checkboxes in zoomed-in headings */
+
+.rm-level1 label.check-container {
+  margin-bottom: 17px;
+  margin-right: -3px;
+}
+
+/* don't shrink block references */
+
+.rm-block-ref {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.rm-block-ref label.check-container {
+  margin-bottom: 12px;
+}
+
+
+
+/* don't need "SHORTCUTS" heading */
+
+.starred-pages-wrapper .flex-h-box {
+  display: none;
+}
+
+.starred-pages-wrapper > div:first-child {
+  margin: 0 -18px;
+}
+
+/* more subtle logo */
+
+#roam-sidebar-logo img {
+  opacity: 0.4;
+}
+#roam-sidebar-logo span {
+  display: none;
+}
+
+/* fade loading astrolabe */
+
+.loading-astrolabe img {
+  opacity: 0.2;
+}
+
+/* lighter sidebar background */
+
+#right-sidebar {
+  background-color: rgba(216, 225, 232, 0.2) !important; 
+  /* rgba(216, 225, 232, 0.3) */
+  border-left: 1px solid #ddd !important;
+}
+
+/* sidebar sections */
+
+#roam-right-sidebar-content > div {
+  border-bottom: 1px solid #ddd !important;
+  margin: 0 !important;
+  padding: 10px 4px 10px 50px;
+}
+
+/* sidebar section headings */
+
+#roam-right-sidebar-content > div > div:first-child {
+  margin-left: -10px;
+}
+
+/* rule under top section of left sidebar */
+
+.roam-sidebar-content > div:first-child {
+  padding: 4px 16px !important;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgb(57, 75, 89);
+}
+
+/* rule under topbar */
+
+.roam-topbar {
+  border-bottom: 1px solid #eee;
+}
+
+/* crumbs */
+
+.rm-reference-item
+  > div:first-child
+  > div:first-child
+  div
+  span:not(.bp3-icon-chevron-right),
+.roam-article
+  > div:first-child:not(.roam-log-container)
+  > div:first-child
+  div
+  span:not(.bp3-icon-chevron-right) {
+  font-size: 12px;
+  line-height: 1.3;
+  color: #bbb !important;
+  /* truncate to smaller width, use css for ellipsis */
+  --max-width: 1000px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px !important;
+}
+
+.rm-reference-item
+  > div:first-child
+  > div:first-child
+  div
+  span:hover:not(.bp3-icon-chevron-right),
+.roam-article
+  > div:first-child:not(.roam-log-container)
+  > div:first-child
+  div
+  span:hover:not(.bp3-icon-chevron-right) {
+  color: black !important;
+}
+
+/* chevrons in crumbs */
+
+.roam-reference-item > div > div:first-child .bp3-icon-chevron-right,
+.roam-article
+  > div
+  > div:first-child:not(.roam-log-container)
+  .bp3-icon-chevron-right {
+  font-size: 1em;
+  margin: 0 3px;
+  color: #ddd !important;
+}
+
+/* no checkboxes in crumbs */
+
+.roam-reference-item
+  > div:first-child:not(.roam-log-container)
+  > div:first-child
+  label.check-container,
+.roam-article
+  > div:first-child:not(.roam-log-container)
+  > div:first-child
+  label.check-container {
+  display: none;
+}
+
+/* link buttons for referenced items */
+
+.rm-reference-main button {
+  border: 1px solid #eee;
+  border-radius: 0.3em;
+  font-size: 0.8em;
+}
+
+.rm-reference-main button:hover {
+  border-color: #ccc;
+}
+
+/* referenced item section headings */
+
+.rm-reference-main {
+  --border-top: 1px solid #ededed;
+}
+
+.flex-h-box {
+    padding-top: 0px !important;
+}
+
+.rm-reference-main .flex-h-box {
+  min-height: 30px;
+}
+
+.rm-reference-main strong {
+  color: #666;
+  font-size: 0.8em;
+  --background-color: rgba(216, 225, 232, 0.3);
+}
+
+/* remove background from referenced items */
+
+.rm-reference-item {
+  padding: 6px 0 0 0;
+  margin: 6px 0 0 0;
+  border-top: 1px solid #eee;
+  background: none;
+}
+
+/* slightly bigger page headings under referenced items */
+.rm-reference-main .rm-level3 {
+  font-size: 1.6em;
+}
+
+/* search */
+
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+}
+
+.rm-find-or-create-wrapper .bp3-input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* highlights */
+
+.roam-highlight {
+  --background-color: #c2f9fa;
+}
+
+/* links */
+
+a.rm-alias.rm-alias-external {
+    color: #b33ba9 !important;
+}
+
+.rm-page-ref-link-color {
+    color: #106ba3;
+}
+
