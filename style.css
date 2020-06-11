@@ -1,6 +1,12 @@
 /* Fix images inside Kanban by @su */
 .kanban-card > span div { width: auto !important; margin-right: 0 !important; }
 
+/* Better italics */
+em {
+    font-family: "Times-Roman", sans-serif;
+    font-size: 1.2em;
+}
+
 /* How to use: Simply put #make:yt-large infront of {{youtube: }} */
 [data-tag*="make:yt-large"] ~ div iframe
 {
