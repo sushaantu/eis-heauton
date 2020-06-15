@@ -1,16 +1,43 @@
 /* 
-Version 0.4
+Version 0.6
 Author: Sushaantu
 */
 
-/* SF font on Macs */
-*, div {
+:root {
+  --font-size: 15.5px; 
+  --primary-color: rgb(10, 132, 255);
+}
+
+body, html {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  letter-spacing: 0;
+  color: #000;
+  font-size: var(--font-size) !important;
+}
+
+div {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: var(--font-size) !important;
+}
+
+textarea {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: var(--font-size) !important;
+}
+
+input,
+textarea,
+[contenteditable] {
+  color: var(--primary-color);
+}
+
+.rm-page-ref-tag {
+  color: var(--primary-color);
 }
 
 /* Blue link */
 a, .rm-page-ref-link-color {
-  color: rgb(10, 132, 255);
+  color: var(--primary-color);
 }
 
 /* Kanban */
@@ -28,7 +55,7 @@ a, .rm-page-ref-link-color {
 .kanban-title {
   background: #fff;
   border-bottom: 0;
-  background-color: rgb(10, 132, 255) !important;
+  background-color: var(--primary-color) !important;
   border-radius: 3px 3px 0 0;
 }
 
@@ -42,12 +69,6 @@ a, .rm-page-ref-link-color {
 .kanban-board {
     background-color: #fff;
     padding: 0;
-}
-
-/* Better italics */
-em {
-    font-family: "Times-Roman", serif;
-    font-size: 1.2em;
 }
 
 /* left sidebar lighter bg  */
@@ -96,11 +117,11 @@ div#right-sidebar {
 }
 
 span.version-bullet {
-  background-color: rgb(10, 132, 255) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .check-container input:checked ~ .checkmark {
-  background-color: rgb(10, 132, 255) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .bp3-button>:last-child {
@@ -108,12 +129,12 @@ span.version-bullet {
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
-  background: rgb(10, 132, 255) !important;
+  background: var(--primary-color) !important;
   color: #fff;
 }
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-  background: rgb(10, 132, 255) !important;
+  background: var(--primary-color) !important;
   color: #fff;
 }
 
@@ -134,16 +155,23 @@ a#roam-sidebar-logo {
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
+  body, html {
     background: #000;
+    color: #fff;
   }
+  
+  input,
+textarea,
+[contenteditable] {
+  color:  #fff;
+}
   
   .roam-body .roam-app h1 {
     color: #fff;  
   }
   
   .roam-body .roam-app {
-    color: #fff;
+    color: #a7a7a7;
   }
   
   .rm-pages-title-text {
@@ -176,6 +204,10 @@ a#roam-sidebar-logo {
     background: #000;
   }
   
+  .roam-highlight {
+    color: #000;
+  }
+  
   .rm-reference-item {
   	background: #000;
   }
@@ -191,7 +223,7 @@ a#roam-sidebar-logo {
   }
   
   .rm-clickable-pill {
-    background-color: rgb(10, 132, 255) !important;
+    background-color: var(--primary-color) !important;
     color: #fff !important;
   }
   
@@ -221,7 +253,7 @@ a#roam-sidebar-logo {
   }
   
   .roam-bullet-closed {
-    background-color: rgb(10, 132, 255) !important;
+    background-color: var(--primary-color) !important;
   }
   
   /* left sidebar lighter bg  */
