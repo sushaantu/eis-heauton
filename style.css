@@ -26,6 +26,7 @@ em {
 /* left sidebar divider  */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper > div:first-child {
   background-color: #eee !important;
+  margin: 2px 0;
 }
 
 /* topbar */
@@ -75,6 +76,28 @@ span.version-bullet {
 
 .bp3-button>:last-child {
   color: #5c7080;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background: rgb(10, 132, 255) !important;
+  color: #fff;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background: rgb(10, 132, 255) !important;
+  color: #fff;
+}
+
+.flex-v-box.starred-pages-wrapper {
+    padding: 8px 0 !important;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  padding: 8px 20px !important;
+}
+
+.flex-v-box .starred-pages-wrapper .flex-h-box {
+    padding: 0px 20px !important;
 }
 
 @media (prefers-color-scheme: dark) {
