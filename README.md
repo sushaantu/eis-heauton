@@ -7,4 +7,5 @@ How to add this theme:
 ```
 
 Todos Light Mode:
-[] Change color of selected text from blue to black, leaving only the cursor blue
+
+[ ] Change color of selected text from blue to black, leaving only the cursor blue
