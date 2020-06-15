@@ -1,5 +1,5 @@
 /* 
-Version 0.3
+Version 0.4
 Author: Sushaantu
 */
 
@@ -161,6 +161,15 @@ a#roam-sidebar-logo {
   
   .bp3-button[class*="bp3-icon-"]::before {
     color: #fff !important;
+  }
+  
+  .kanban-board {
+    background-color: #000;
+    padding: 0;
+  }
+  
+  .kanban-column {
+    color: #000;
   }
   
   .kanban-title {
