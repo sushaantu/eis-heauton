@@ -1,5 +1,5 @@
 /* 
-Version 0.2
+Version 0.3
 Author: Sushaantu
 */
 
@@ -37,6 +37,11 @@ a, .rm-page-ref-link-color {
     display: inline-block;
     color: #fff;
     font-weight: bold;
+}
+
+.kanban-board {
+    background-color: #fff;
+    padding: 0;
 }
 
 /* Better italics */
