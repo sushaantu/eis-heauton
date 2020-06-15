@@ -1,5 +1,5 @@
 /* 
-Version 0.6
+Version 0.7
 Author: Sushaantu
 */
 
@@ -13,6 +13,12 @@ body, html {
   letter-spacing: 0;
   color: #000;
   font-size: var(--font-size) !important;
+}
+
+em {
+  font-family: Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+  font-size: 21px;
+  margin: 0 3px;
 }
 
 div {
@@ -204,8 +210,15 @@ textarea,
     background: #000;
   }
   
-  .roam-highlight {
-    color: #000;
+  .roam-highlight, .roam-highlight strong {
+    background-color: rgb(255, 214, 10);
+    color: rgb(28, 28, 30) !important;
+  }
+  
+  .rm-embed-container {
+    background: #1f1f1f !important;
+    border-radius: 3px;
+    padding: 10px;
   }
   
   .rm-reference-item {
