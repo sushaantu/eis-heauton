@@ -1,5 +1,5 @@
 /* 
-Version 0.1 
+Version 0.2
 Author: Sushaantu
 */
 
@@ -13,8 +13,31 @@ a, .rm-page-ref-link-color {
   color: rgb(10, 132, 255);
 }
 
-/* Fix images inside Kanban by @su */
+/* Kanban */
 .kanban-card > span div { width: auto !important; margin-right: 0 !important; }
+.kanban-card {
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+}
+.kanban-column {
+  margin: 4px;
+  padding: 0;
+  border-radius: 3px;
+  background-color: #ebecf0;
+}
+.kanban-title {
+  background: #fff;
+  border-bottom: 0;
+  background-color: rgb(10, 132, 255) !important;
+  border-radius: 3px 3px 0 0;
+}
+
+.kanban-title span {
+    margin-top: 5px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+}
 
 /* Better italics */
 em {
@@ -65,10 +88,6 @@ div#right-sidebar {
 .CodeMirror {
   border-radius: 6px;
   border: 1px solid #eee;
-}
-
-.kanban-title {
-  background: #fff;
 }
 
 span.version-bullet {
