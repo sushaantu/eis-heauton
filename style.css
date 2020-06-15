@@ -1,15 +1,17 @@
-/* 
-Version 0.8
+/*
+Version 0.9
 Author: Sushaantu
 */
 
 :root {
-  --font-size: 15.5px; 
+  --font-size: 15.5px;
   --primary-color: rgb(10, 132, 255);
+  --primary-color: hsl(220, 100%, 50%);
+  --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 body, html {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 0;
   color: #000;
   font-size: var(--font-size) !important;
@@ -23,12 +25,12 @@ em {
 }
 
 div {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: var(--font-family);
   font-size: var(--font-size) !important;
 }
 
 textarea {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-family: var(--font-family);
   font-size: var(--font-size) !important;
 }
 
@@ -166,114 +168,114 @@ a#roam-sidebar-logo {
     background: #000;
     color: #fff;
   }
-  
+
   input,
 textarea,
 [contenteditable] {
   color:  #fff;
 }
-  
+
   .roam-body .roam-app h1 {
-    color: #fff;  
+    color: #fff;
   }
-  
+
   .roam-body .roam-app {
     color: #a7a7a7;
   }
-  
+
   .rm-pages-title-text {
     color: #fff;
   }
-  
+
   .bp3-button>:last-child {
 	color: #fff !important;
   }
-  
+
   .bp3-input {
     background: #ffffff26;
     color: #fff;
   }
-  
+
   .bp3-button[class*="bp3-icon-"]::before {
     color: #fff !important;
   }
-  
+
   em {
     color: #fff;
   }
-  
+
   .kanban-board {
     background-color: #000;
     padding: 0;
   }
-  
+
   .kanban-column {
     color: #000;
   }
-  
+
   .kanban-title {
     background: #000;
   }
-  
+
   .roam-highlight, .roam-highlight strong {
     background-color: rgb(255, 214, 10);
     color: rgb(28, 28, 30) !important;
   }
-  
+
   .rm-embed-container {
     background: #1f1f1f !important;
     border-radius: 3px;
     padding: 10px;
   }
-  
+
   .rm-reference-item {
   	background: #000;
   }
-  
+
   div#right-sidebar {
     background: #000 !important;
     border-left: 1px solid #2b2b2b !important;
   }
-  
+
   .controls .simple-bullet-outer .simple-bullet-inner {
     background-color: rgb(100, 210, 255) !important;
     color: #fff !important;
   }
-  
+
   .rm-clickable-pill {
     background-color: var(--primary-color) !important;
     color: #fff !important;
   }
-  
+
   .rm-clickable-pill.empty-pill {
     opacity: 0.6;
   }
-  
+
   .rm-clickable-pill.level1-pill {
     opacity: 0.7;
   }
-  
+
   .rm-clickable-pill.level2-pill {
     opacity: 0.8;
   }
-  
+
   .rm-clickable-pill.level3-pill {
     opacity: 0.9;
   }
-  
+
   .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
     color: #eee;
   }
-  
+
   .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
     background-color: #263238;
     border-bottom: 0;
   }
-  
+
   .roam-bullet-closed {
     background-color: var(--primary-color) !important;
   }
-  
+
   /* left sidebar lighter bg  */
   .roam-body .roam-app .roam-sidebar-container {
     background: #000;
@@ -300,4 +302,4 @@ textarea,
     border: none !important;
     box-shadow: none !important;
   }
-}		
+}
