@@ -10,7 +10,7 @@ Author: Sushaantu
   --light-background: #fff;
   --dark-background: #000;
   --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-  --left-sidebar-font-size: 13px;
+  --left-sidebar-font-size: 14px;
 }
 
 body, html {
@@ -178,7 +178,7 @@ span.version-bullet {
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
   padding: 8px 20px !important;
-  font-size: var(--left-sidebar-font-size); !important;
+  font-size: var(--left-sidebar-font-size) !important;
 }
 
 .flex-v-box .starred-pages-wrapper .flex-h-box {
