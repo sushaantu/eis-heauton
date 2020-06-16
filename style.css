@@ -1,26 +1,29 @@
 /*
-Version 0.9
+Version 0.11
 Author: Sushaantu
 */
 
 :root {
   --font-size: 15.5px;
   --primary-color: rgb(10, 132, 255);
-  --primary-color: hsl(220, 100%, 50%);
+  --darkest-color: #000;
+  --light-background: #fff;
+  --dark-background: #000;
   --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  --left-sidebar-font-size: 13px;
 }
 
 body, html {
   font-family: var(--font-family);
   letter-spacing: 0;
-  color: #000;
+  color: var(--darkest-color);
   font-size: var(--font-size) !important;
 }
 
 em {
   font-family: Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
-  font-size: 21px;
-  margin: 0 2px;
+  margin: 0 1px;
+  font-size: 19px;
   color: #666;
 }
 
@@ -34,10 +37,20 @@ textarea {
   font-size: var(--font-size) !important;
 }
 
+/*
 input,
 textarea,
 [contenteditable] {
   color: var(--primary-color);
+}
+*/
+
+.roam-block {
+  min-height: auto !important;
+}
+
+.checkmark {
+  top: -1px !important;
 }
 
 .rm-page-ref-tag {
@@ -52,15 +65,17 @@ a, .rm-page-ref-link-color {
 /* Kanban */
 .kanban-card > span div { width: auto !important; margin-right: 0 !important; }
 .kanban-card {
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(9,30,66,.25);
 }
+
 .kanban-column {
   margin: 4px;
   padding: 0;
   border-radius: 3px;
   background-color: #ebecf0;
 }
+
 .kanban-title {
   background: #fff;
   border-bottom: 0;
@@ -69,15 +84,25 @@ a, .rm-page-ref-link-color {
 }
 
 .kanban-title span {
-    margin-top: 5px;
-    display: inline-block;
-    color: #fff;
-    font-weight: bold;
+  margin-top: 5px;
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
 }
 
 .kanban-board {
-    background-color: #fff;
-    padding: 0;
+  background-color: #fff;
+  padding: 0;
+}
+
+.rm-saving-icon .rm-synced {
+  background-color: #4CAF50 !important
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .flex-h-box,
+span.bp3-icon-small.bp3-icon-star ~ span {
+  font-size: var(--left-sidebar-font-size) !important;
 }
 
 /* left sidebar lighter bg  */
@@ -153,6 +178,7 @@ span.version-bullet {
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
   padding: 8px 20px !important;
+  font-size: var(--left-sidebar-font-size); !important;
 }
 
 .flex-v-box .starred-pages-wrapper .flex-h-box {
@@ -170,10 +196,10 @@ a#roam-sidebar-logo {
   }
 
   input,
-textarea,
-[contenteditable] {
-  color:  #fff;
-}
+  textarea,
+  [contenteditable] {
+    color:  #fff;
+  }
 
   .roam-body .roam-app h1 {
     color: #fff;
