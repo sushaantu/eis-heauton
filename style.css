@@ -1,5 +1,5 @@
 /*
-Version 0.11
+Version 0.12
 Author: Sushaantu
 */
 
@@ -34,7 +34,6 @@ div {
 
 textarea {
   font-family: var(--font-family);
-  font-size: var(--font-size) !important;
 }
 
 /*
@@ -193,6 +192,12 @@ a#roam-sidebar-logo {
   body, html {
     background: #000;
     color: #fff;
+  }
+
+  code {
+    color: #000;
+    background: #fffffff7;
+    border: 1px solid #fff;
   }
 
   input,
