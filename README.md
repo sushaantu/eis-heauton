@@ -9,6 +9,9 @@ How to add this theme:
 Todos Light Mode:
 
 [ ] Change color of selected text from blue to black, leaving only the cursor blue
+
 [x] Page heading size is too small when you create a new page
+
 [ ] Differentiate between text and link colors
+
 [ ] Make the border-left active for the active node
