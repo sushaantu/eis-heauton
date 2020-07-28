@@ -1,5 +1,9 @@
 # Eis Heauton
 Just enough styling to make Roam pop.
+- Light and Dark modes
+- Better typography defaults
+- Prettier Kanban and Tables
+- Wider search
 
 How to add this theme:
 ```
