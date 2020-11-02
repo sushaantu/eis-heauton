@@ -19,3 +19,5 @@ Todos Light Mode:
 [ ] Differentiate between text and link colors
 
 [ ] Make the border-left active for the active node
+
+[ ] Fix the formatting of headings h1, h2 and h3 etc.
